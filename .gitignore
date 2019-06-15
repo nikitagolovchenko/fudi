@@ -27,4 +27,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# ----- мои игноры-------------
+# sass-cache
+*.sass-cache
+
+# css.map
+*style.css.map
+
 # End of https://www.gitignore.io/api/windows
