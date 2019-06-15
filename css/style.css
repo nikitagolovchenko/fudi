@@ -3562,6 +3562,34 @@ a {
   color: inherit;
   text-decoration: none; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?q7lv1a");
+  src: url("../fonts/icomoon.eot?q7lv1a#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?q7lv1a") format("truetype"), url("../fonts/icomoon.woff?q7lv1a") format("woff"), url("../fonts/icomoon.svg?q7lv1a#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-banknote:before {
+  content: "\e900"; }
+
+.icon-burger:before {
+  content: "\e901"; }
+
+.icon-chef:before {
+  content: "\e902"; }
+
 .header {
   position: absolute;
   top: 0;
@@ -3710,5 +3738,67 @@ a {
   .btn:hover {
     color: #f57365;
     border-color: #f57365; }
+
+.services {
+  padding: 30px 0;
+  font-size: 14px; }
+  @media (min-width: 480px) {
+    .services {
+      padding: 45px 0;
+      font-size: 15px; } }
+  @media (min-width: 768px) {
+    .services {
+      padding: 75px 0;
+      font-size: 16px; } }
+  .services__content {
+    margin: 15px 0; }
+  .services__item {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #221f1f;
+    border-radius: 50%;
+    position: relative; }
+    @media (min-width: 480px) {
+      .services__item {
+        width: 95px;
+        height: 95px; } }
+    @media (min-width: 768px) {
+      .services__item {
+        width: 105px;
+        height: 105px; } }
+  .services__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: #f57365; }
+    @media (min-width: 768px) {
+      .services__icon {
+        font-size: 40px; } }
+    @media (min-width: 768px) {
+      .services__icon {
+        font-size: 45px; } }
+  .services__text {
+    font-weight: 300;
+    text-align: center; }
+
+.title {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+  padding: 20px 10px 10px; }
+  .title:after {
+    content: "";
+    top: 100%;
+    left: 50%;
+    position: absolute;
+    width: 88px;
+    height: 1px;
+    background-color: #f57365;
+    transform: translateX(-50%); }
 
 /*# sourceMappingURL=style.css.map */
