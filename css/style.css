@@ -3543,6 +3543,12 @@ html {
 .nav__link, .nav-toggle__item, .btn {
   transition: all .2s linear; }
 
+.nav__item, .intro__subtitle, .intro__title, .intro__text {
+  text-shadow: 0 1px 50px rgba(1, 1, 1, 0.55); }
+
+.intro:before {
+  background: linear-gradient(to bottom, transparent 0, transparent 50%, rgba(45, 9, 60, 0.7) 100%); }
+
 * {
   padding: 0;
   margin: 0;
@@ -3594,6 +3600,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1000;
   width: 100%;
   padding: 20px 0; }
   .header__img {
@@ -3682,7 +3689,8 @@ a {
   background-size: cover;
   padding: 150px 15px 75px;
   color: #fff;
-  font-size: 12px; }
+  font-size: 12px;
+  position: relative; }
   @media (min-width: 768px) {
     .intro {
       padding: 250px 15px 125px;
@@ -3691,6 +3699,17 @@ a {
     .intro {
       padding: 345px 15px 230px;
       font-size: 16px; } }
+  .intro:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; }
+  .intro__inner {
+    position: relative;
+    z-index: 50; }
   .intro__subtitle {
     opacity: 0.7;
     font-size: 2.25em;
