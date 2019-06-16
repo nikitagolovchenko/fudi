@@ -3540,7 +3540,7 @@ html {
   .ml-xl-auto,
   .mx-xl-auto {
     margin-left: auto !important; } }
-.nav__link, .nav-toggle__item, .btn {
+.nav__link, .nav-toggle__item, .btn, .play {
   transition: all .2s linear; }
 
 .nav__item, .intro__subtitle, .intro__title, .intro__text {
@@ -3570,8 +3570,8 @@ a {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?q7lv1a");
-  src: url("../fonts/icomoon.eot?q7lv1a#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?q7lv1a") format("truetype"), url("../fonts/icomoon.woff?q7lv1a") format("woff"), url("../fonts/icomoon.svg?q7lv1a#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?p0392r");
+  src: url("../fonts/icomoon.eot?p0392r#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?p0392r") format("truetype"), url("../fonts/icomoon.woff?p0392r") format("woff"), url("../fonts/icomoon.svg?p0392r#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -3586,6 +3586,28 @@ a {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-google-play .path1:before {
+  content: "\e903";
+  color: #5cdadd; }
+
+.icon-google-play .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: #bdecc4; }
+
+.icon-google-play .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: #dc68a1; }
+
+.icon-google-play .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: #ffca96; }
+
+.icon-icon:before {
+  content: "\e907"; }
 
 .icon-banknote:before {
   content: "\e900"; }
@@ -3819,5 +3841,77 @@ a {
     height: 1px;
     background-color: #f57365;
     transform: translateX(-50%); }
+  .title--start-line {
+    padding: 20px 0 10px; }
+    .title--start-line:after {
+      content: "";
+      top: 100%;
+      left: 11%;
+      position: absolute;
+      width: 88px;
+      height: 1px;
+      background-color: #f57365; }
+
+.app {
+  background-color: #f7f7f7;
+  padding-top: 40px;
+  font-size: 14px; }
+  @media (min-width: 480px) {
+    .app {
+      padding-top: 55px;
+      font-size: 15px; } }
+  @media (min-width: 768px) {
+    .app {
+      padding-top: 75px;
+      font-size: 16px; } }
+  @media (min-width: 992px) {
+    .app {
+      padding-top: 100px; } }
+  .app__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: -15px; }
+  .app__intro {
+    margin-bottom: 15px; }
+  .app__text {
+    font-weight: 300;
+    margin-bottom: 13px; }
+    @media (min-width: 480px) {
+      .app__text {
+        margin-bottom: 15px; } }
+    @media (min-width: 768px) {
+      .app__text {
+        margin-bottom: 22px; } }
+    @media (min-width: 992px) {
+      .app__text {
+        margin-bottom: 30px; } }
+
+.play {
+  width: 115px;
+  padding: 5px;
+  margin-right: 15px;
+  background-color: #58585a;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px; }
+  @media (min-width: 768px) {
+    .play {
+      margin-right: 10px;
+      width: 125px;
+      font-size: 14px; } }
+  .play:hover {
+    background-color: #221f1f; }
+  .play__icon {
+    font-size: 1.6em; }
+  .play__text {
+    padding-left: 5px; }
+    .play__text span {
+      display: block;
+      font-size: 0.625em;
+      font-weight: 300; }
+    .play__text p {
+      font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

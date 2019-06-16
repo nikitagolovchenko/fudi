@@ -17,4 +17,18 @@
         background-color: $red;
         transform: translateX(-50%);
     }
+
+    &--start-line {
+        padding: 20px 0 10px;
+
+        &:after {
+            content: "";
+            top: 100%;
+            left: 11%;
+            position: absolute;
+            width: 88px;
+            height: 1px;
+            background-color: $red;
+        }
+    }
 }
