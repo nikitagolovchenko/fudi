@@ -1,5 +1,9 @@
 @import "../bootstrap/scss/bootstrap-grid";
 
+@import "../slick/slick.scss";
+
+@import "../slick/slick-theme.scss";
+
 @import "helpers/variables";
 
 @import "helpers/mixins";
@@ -23,3 +27,5 @@
 @import "blocks/app";
 
 @import "blocks/play";
+
+@import "blocks/slider";
