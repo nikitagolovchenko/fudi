@@ -1,0 +1,42 @@
+.footer {
+    font-size: $font-size--12px;
+    font-weight: $light;
+    color: $silver;
+    background-color: $gray;
+    padding: 15px 0;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+        padding: 35px 0;
+        font-size: $font-size--14px;
+    }
+
+    &__copyright {
+        margin-bottom: 10px;
+
+        @media (min-width: $screen-md) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+
+        text-transform: uppercase;
+
+        @media (min-width: $screen-md) {
+            text-align: right;
+        }
+
+        a {
+            display: inline-block;
+            font-weight: $regular;
+            color: $black;
+            @extend %transition;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
