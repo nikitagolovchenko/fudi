@@ -1,0 +1,49 @@
+.app {
+    background-color: $gray;
+    padding-top: 40px;
+    font-size: 14px;
+
+    @media (min-width: $screen-sm) {
+        padding-top: 55px;
+        font-size: 15px;
+    }
+
+    @media (min-width: $screen-md) {
+        padding-top: 75px;
+        font-size: 16px;
+    }
+
+    @media (min-width: $screen-lg) {
+        padding-top: 100px;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        position: relative;
+        left: -15px;
+    }
+
+    &__intro {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-weight: $light;
+        margin-bottom: 13px;
+
+        @media (min-width: $screen-sm) {
+            margin-bottom: 15px;
+        }
+    
+        @media (min-width: $screen-md) {
+            margin-bottom: 22px;
+        }
+    
+        @media (min-width: $screen-lg) {
+            margin-bottom: 30px;
+        }
+    }
+}

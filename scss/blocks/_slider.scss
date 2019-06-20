@@ -1,0 +1,123 @@
+.slider {
+    background: url(../../images/slider/bg-slider.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 30px 0 20px;
+
+    @media (min-width: $screen-sm) {
+        padding: 40px 0 30px;;
+    }
+
+    @media (min-width: $screen-md) {
+        padding: 55px 0 40px;;
+    }
+
+    @media (min-width: $screen-lg) {
+        padding: 75px 0 60px;;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background-color: rgba($color: $maroon, $alpha: 0.7);
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 10;
+    }  
+
+    &__content {
+        text-align: center;
+        font-size: 12px;
+
+        @media (min-width: $screen-md) {
+            font-size: 14px;
+        }
+
+        @media (min-width: $screen-lg) {
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        width: 115px;
+        height: 115px;
+        border: 5px solid $darken-gray;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
+
+        @media (min-width: $screen-md) {
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: $screen-lg) {
+            margin-bottom: 25px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: -20px;
+        }
+    } 
+    
+    &__quote {
+        font-size: $font-size--30px;
+        font-weight: $light;
+        line-height: $line-height--big;
+        color: rgba($color: $gray, $alpha: 0.5);
+        margin-bottom: 10px;
+
+        @media (min-width: $screen-md) {
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: $screen-lg) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__name {
+        font-size: $font-size--18px;
+        color: rgba($color: $gray, $alpha: 0.5);
+        margin-bottom: 30px;
+    }
+}
+
+/* Slick-slider */
+.slick-slide {
+    outline: none;
+}
+
+.slick-dots {
+    li {
+        margin: 0;
+
+        button {
+            &:before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                opacity: 1;
+                background-color: $dark-gray;
+            } 
+        }
+    }
+
+    li.slick-active {
+        button {
+            &:before {
+                background-color: $white;
+            }
+        }
+    }
+}

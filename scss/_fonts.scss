@@ -1,35 +1,57 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?q7lv1a');
-    src:  url('../fonts/icomoon.eot?q7lv1a#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?q7lv1a') format('truetype'),
-      url('../fonts/icomoon.woff?q7lv1a') format('woff'),
-      url('../fonts/icomoon.svg?q7lv1a#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-banknote:before {
-    content: "\e900";
-  }
-  .icon-burger:before {
-    content: "\e901";
-  }
-  .icon-chef:before {
-    content: "\e902";
-  }
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?p0392r');
+  src:  url('../fonts/icomoon.eot?p0392r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?p0392r') format('truetype'),
+    url('../fonts/icomoon.woff?p0392r') format('woff'),
+    url('../fonts/icomoon.svg?p0392r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-play .path1:before {
+  content: "\e903";
+  color: rgb(92, 218, 221);
+}
+.icon-google-play .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(189, 236, 196);
+}
+.icon-google-play .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(220, 104, 161);
+}
+.icon-google-play .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 202, 150);
+}
+.icon-icon:before {
+  content: "\e907";
+}
+.icon-banknote:before {
+  content: "\e900";
+}
+.icon-burger:before {
+  content: "\e901";
+}
+.icon-chef:before {
+  content: "\e902";
+}

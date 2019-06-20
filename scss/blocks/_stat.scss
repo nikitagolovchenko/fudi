@@ -1,0 +1,43 @@
+.stat {
+    padding: 25px 0 10px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 12px;
+
+    @media (min-width: $screen-sm) {
+        padding: 60px 0 40px;
+        font-size: 14px;
+    }
+
+    @media (min-width: $screen-md) {
+        padding: 60px 0 40px;
+        font-size: $font-size;
+    }
+
+    &__number {
+        font-size: $font-size--36px;
+        font-weight: $bold;
+        margin-bottom: 0px;
+
+        @media (min-width: $screen-sm) {
+            margin-bottom: 5px;
+        }
+
+        @media (min-width: $screen-md) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        font-weight: $light;
+        margin-bottom: 10px;
+
+        @media (min-width: $screen-sm) {
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: $screen-md) {
+            margin-bottom: 20px;
+        }
+    }
+}

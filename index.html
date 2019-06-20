@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
       <!-- Header -->
-        <div class="header">
+        <div class="header" id="header"> 
             <div class="container">
                 <div class="row align-items-center justify-content-md-between">
                     <div class="col-3 col-md-2">
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="col-8 offset-6 col-md-5 offset-md-12">
-                        <nav class="nav d-none d-md-block">
+                        <n class="nav d-none d-md-block">
                             <ul class="nav__inner">
                                 <li class="nav__item"><a class="nav__link" href="#">log in</a></li>
                                 <li class="nav__item"><a class="nav__link" href="#">sign up</a></li>
@@ -31,13 +31,13 @@
                             <span class="nav-toggle__item">Menu</span>
                         </button>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/.header-->
 
         <!-- Intro -->
         <div class="container-fluid pr-0 pl-0">
-            <div class="intro">
+            <div class="intro" id="intro">
                 <div class="row">
                     <div class="col-20 col-md-15 col-lg-9 ml-auto mr-auto">
                         <div class="intro__inner d-flex flex-column align-items-center">
@@ -47,9 +47,9 @@
                             <p class="intro__text">or send us your own recipes and <a href="#">get rewarded!</a></p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/.intro-->
 
         <!-- Services -->
         <div class="services">
@@ -90,10 +90,221 @@
                                  Aliquam erat volutpat. </p>
                         </div>
                     </div>
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--services-->
+
+        <!-- App -->
+        <div class="app">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-10 offset-5 col-lg-9 offset-lg-0">
+                        <img class="app__img" src="images/app/app.png" alt="iphone">
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="app__intro">
+                            <h3 class="title title--start-line">introducing the fudi app</h3>
+                            <p class="app__text">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta.</p>
+                            <p class="app__text">Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.</p>
+                            <p class="app__text">Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa.</p>
+                            <div class="app__play d-flex justify-content-center justify-content-lg-start">
+                                <a class="play d-flex align-items-center" href="#">
+                                    <div class="play__icon">
+                                        <span class="icon-icon"> </span>
+                                    </div>
+                                    <div class="play__text">
+                                        <span>Available on the</span>
+                                        <p>App Store</p>
+                                    </div>
+                                </a>
+                                <a class="play d-flex align-items-center" href="#">
+                                    <div class="play__icon">
+                                        <span class="icon-google-play">
+                                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                        </span>
+                                    </div>
+                                    <div class="play__text">
+                                        <span>Android app on</span>
+                                        <p>Google play</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/.app-->
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-16">
+                        <div class="slider__inner">
+                            <div class="slider__content d-flex flex-column align-items-center">
+                                <div class="slider__img">
+                                    <img src="images/slider/photo-1.jpg" alt="">
+                                </div>
+                                <q class="slider__quote">I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!</q>
+                                <cite class="slider__name">- Michael Dawson, San Francisco, CA -</cite>
+                            </div>
+                            <div class="slider__content d-flex flex-column align-items-center">
+                                <div class="slider__img">
+                                    <img src="images/slider/photo-1.jpg" alt="">
+                                </div>
+                                <q class="slider__quote">I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!</q>
+                                <cite class="slider__name">- Michael Dawson, San Francisco, CA -</cite>
+                            </div>
+                            <div class="slider__content d-flex flex-column align-items-center">
+                                <div class="slider__img">
+                                    <img src="images/slider/photo-1.jpg" alt="">
+                                </div>
+                                <q class="slider__quote">I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!</q>
+                                <cite class="slider__name">- Michael Dawson, San Francisco, CA -</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/.slider-->
+
+        <!-- Card -->
+        <div class="card">
+            <div class="container-fluid p-0">
+                <h3 class="title title--margin-lg">Browse by cuisines</h3>
+                <div class="card__inner d-flex flex-wrap justify-content-center">
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-1.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">327 Recipes</p>
+                            <h3 class="card__title">Italian</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-2.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">856 Recipes</p>
+                            <h3 class="card__title">Indian</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-3.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">27 Recipes</p>
+                            <h3 class="card__title">French</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-4.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">174 Recipes</p>
+                            <h3 class="card__title">steakhouse</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-5.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">731 Recipes</p>
+                            <h3 class="card__title">seafood</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-6.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">237 Recipes</p>
+                            <h3 class="card__title">Sushi</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-7.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">529 Recipes</p>
+                            <h3 class="card__title">Mexican</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-8.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">145 Recipes</p>
+                            <h3 class="card__title">Chinese</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-9.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">327 Recipes</p>
+                            <h3 class="card__title">Pizza</h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img class="card__img" src="images/card/card-10.jpg" alt="">
+                        <div class="card__text">
+                            <p class="card__subtitle">1.437 Recipes</p>
+                            <h3 class="card__title">American</h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.container-fluid-->
+        </div><!--/.card-->
+
+        <!-- Stat -->
+        <div class="stat">
+            <div class="container">
+                <div class="row justify-content-sm-center  justify-content-lg-between flex-wrap">
+                    <div class="col-20 col-sm-10 col-md-6 col-lg-3">
+                        <div class="stat__item">
+                            <p class="stat__number">23,567</p>
+                            <p class="stat__text">Recipes Available</p>
+                        </div>
+                    </div>
+                    <div class="col-20 col-sm-10 col-md-6 col-lg-3">
+                        <div class="stat__item">
+                            <p class="stat__number">431,729</p>
+                            <p class="stat__text">Active Users</p>
+                        </div>
+                    </div>
+                    <div class="col-20 col-sm-10 col-md-6 col-lg-3">
+                        <div class="stat__item">
+                            <p class="stat__number">892,173</p>
+                            <p class="stat__text">Positive Reviews</p>
+                        </div>
+                    </div>
+                    <div class="col-20 col-sm-10 col-md-6 col-lg-3">
+                        <div class="stat__item">
+                            <p class="stat__number">56,581</p>
+                            <p class="stat__text">Photos & Videos</p>
+                        </div>
+                    </div>
+                    <div class="col-20 col-sm-10 col-md-6 col-lg-3">
+                        <div class="stat__item">
+                            <p class="stat__number">3,182</p>
+                            <p class="stat__text">Spices and Herbs</p>
+                        </div>
+                    </div>
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/.stat-->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-20 col-md">
+                        <p class="footer__copyright">©2014 Fudi. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-20 col-md">
+                        <p class="footer__link">design by: <a href="#">www.bekades.com</a></p>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
+
+    </div><!--/.wrapper-->
+
+
+    <script src="javascripts/jquery-3.4.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="javascripts/main.js"></script>
 </body>
 </html>
