@@ -3829,12 +3829,41 @@ a {
   z-index: 1000;
   width: 100%;
   padding: 20px 0; }
+  .header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #4F1641;
+    box-shadow: 0 3px 3px rgba(79, 22, 65, 0.5); }
   .header__img {
     display: block;
     width: 100%;
     height: auto; }
 
 /* Nav */
+.nav.active {
+  display: block !important;
+  position: absolute;
+  top: -29px;
+  left: 20px;
+  width: 100%; }
+  .nav.active .nav__inner {
+    width: 100px;
+    flex-wrap: wrap;
+    align-items: center; }
+  .nav.active .nav__item {
+    width: 100%;
+    margin-left: 0;
+    border-top: 1px solid #9D7868;
+    border-bottom: 1px solid #9D7868;
+    padding: 5px;
+    font-size: 0.75em; }
+    @media (min-width: 576px) {
+      .nav.active .nav__item {
+        font-size: 0.875em; } }
 .nav__inner {
   display: flex;
   flex-direction: row;
