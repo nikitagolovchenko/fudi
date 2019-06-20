@@ -3835,7 +3835,7 @@ a {
     left: 0;
     z-index: 1000;
     width: 100%;
-    padding: 20px 0;
+    padding: 5px 0;
     background-color: #4F1641;
     box-shadow: 0 3px 3px rgba(79, 22, 65, 0.5); }
   .header__img {
