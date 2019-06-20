@@ -6,6 +6,7 @@
     margin-bottom: 18px;
     position: relative;
     padding: 20px 10px 10px;
+    text-align: center;
 
     &:after {
         content: "";
@@ -20,6 +21,7 @@
 
     &--start-line {
         padding: 20px 0 10px;
+        text-align-last: left;
 
         &:after {
             content: "";
@@ -30,5 +32,9 @@
             height: 1px;
             background-color: $red;
         }
+    }
+
+    &--margin-lg {
+        margin-bottom: 40px;
     }
 }
